@@ -1,4 +1,4 @@
-package bankaccountapp.num2word;
+package num2word;
 
 
 
