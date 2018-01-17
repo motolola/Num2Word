@@ -18,7 +18,7 @@ public class AmountInWords {
     public static void main(String [] args){
         byte b = 23;
         String[]s={"naira","kobo"};
-        double g = 345799089.71;
+        double g = 3456799089.71;
         System.out.println(toWord(g,TYPE_MEASURE,s));
         System.out.println(toWord(g,TYPE_CURRENCY,s));
     }
@@ -28,7 +28,7 @@ public class AmountInWords {
     private static final String units[] = {" zero "," one "," two "," three "," four "," five "," six "," seven "," eight "," nine "};
     private static final String tens[] = { " twenty "," thirty "," forty "," fifty "," sixty "," seventy "," eighty "," ninety "};
     private static final String teens [] = {" ten ", " eleven ", " twelve "," thirteen "," fourteen "," fifteen "," sixteen "," seventeen "," eighteen "," nineteen "};
-    private static final String levels [] = {" hundred "," thousand "," million "," trillion "," quadrillion "," quintillion "," sextillion ", " septillion "," octillion "};
+    private static final String levels [] = {" hundred "," thousand "," million ","billion", " trillion "," quadrillion "," quintillion "," sextillion ", " septillion "," octillion "};
     private static final String and  = " and ";
     private static final String point  = " point ";
     private static final short t[] = {10,100,1000};
