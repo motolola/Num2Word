@@ -16,17 +16,16 @@ package num2word;
 public class AmountInWords {
 
     public static void main(String [] args){
-        byte b = 23;
         String[]s={"naira","kobo"};
         double g = 3456799089.71;
         System.out.println(toWord(g,TYPE_MEASURE,s));
-        System.out.println(toWord(g,TYPE_CURRENCY,s));
+        //System.out.println(toWord(g,TYPE_CURRENCY,s));
     }
 
     //10exp18 = quintillion;10exp21 = sextillion; 10exp24 = septillion;10exp27 = octillion
     //gazillion, zillion, jillion == large and indeterminate number
     private static final String units[] = {" zero "," one "," two "," three "," four "," five "," six "," seven "," eight "," nine "};
-    private static final String tens[] = { " twenty "," thirty "," forty "," fifty "," sixty "," seventy "," eighty "," ninety "};
+    private static final String tens[] = {" twenty "," thirty "," forty "," fifty "," sixty "," seventy "," eighty "," ninety "};
     private static final String teens [] = {" ten ", " eleven ", " twelve "," thirteen "," fourteen "," fifteen "," sixteen "," seventeen "," eighteen "," nineteen "};
     private static final String levels [] = {" hundred "," thousand "," million ","billion", " trillion "," quadrillion "," quintillion "," sextillion ", " septillion "," octillion "};
     private static final String and  = " and ";
@@ -46,7 +45,7 @@ public class AmountInWords {
         }
         //get fractional part of number is there is
         frac = (number - (long)number);//(float)
-        System.out.println("Fractional Part is :" + frac);
+        //System.out.println("Fractional Part is :" + frac);
         //get whole decimal part of number
         long num = (long)number;
 
